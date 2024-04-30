@@ -1,0 +1,27 @@
+.container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;                /*flex는  wrap를 사용하지 않으면 */
+}
+
+.team-profile {
+    text-align: center;
+}
+
+.team-img {                /*중요점임 잘봐두자*/
+    width: 120px;
+    height: 120px;
+    object-fit: cover;     /* 비율을 조금이라도 유지가능*/
+    object-position: top;
+    border-radius: 50%;
+}
+
+.team-name {
+    margin: 1rem 0 1rem;
+}
+
+.team-role {
+    font-size: 0.8rem;
+    color: #888;
+}

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* 구글/폰트 한국어 폰트 찾아> 폰트골라>겟임베드코드> web>@import*/
+/* html 코드 스타일다지우고 @import 제일 상위에 올려놔 */
+/* 그리고  css코드에서 font-family ctrl c+v*/
+
+*{
+    margin: 0;
+    padding: 0;                /* 첫번째 리셋*/
+    box-sizing: border-box;
+
+}
+/* a, a링크, a링크누르면 */
+/* 링크는 파란색 밑줄이 디폴트옵션으로 되어있음 */
+a, a:link, a:visited {
+    color: inherit;              /* 두번째 리셋*/
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+/* 상위좌표계 중요 */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed; /* fixed = 값 고정*/
+    color: white;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 1rem;
+}
+
+header .container{
+    display: flex;  /* display는 상위좌표의 하위코드들에게 적용됨*/
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    /* flex는 메인축 을 정하는게 목적. 즉,옆으로 눕혀 정렬 기억하자 */
+    /* flex는 p와 m을 동시에 대응가능 */
+    /* flex는 레이아웃때문에도 사용한다/관리목적 즉, 위치정렬 */
+
+}
+
+header nav ul li{
+    padding: 10px;
+    /* margin을 안쓰는 이유는 width값이 변해야함 계산이 어려워짐*/
+}
+
+header button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+
+header h1 button {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul li button {
+    font-size: 1.2rem;
+}
+/* HEADER */
+
+main {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../img/me.jpg') center center;
+    /* css 오류가 발생하는 경우는 3가지 파일경로 오류, 오타오류, 문법오류 ex) , 있거나 , 없거나 */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+mian h4 {
+    font-size: 2rem;
+}
+main h2 {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+}
+main p {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-family: "Noto Sans KR", sans-serif;
+    /* 폰트는 운영체제 폰트는 절대 사용하지 않는다 */
+    /* sans-serif 꼭 입력하기 */
+}
+
+main button.download {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+main button.mouse {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: upDown 1s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes upDown {
+    0% {
+        bottom: 1rem;
+    }
+    50% {
+        bottom: 1.5rem;
+    }
+    100% {
+        bottom: 1rem;
+    }
+}
+/* main 끝 */
+
+section {
+    padding: 5rem 0;
+}
+
+section .about-self::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+section .title {
+    margin-bottom: 3rem;
+}
+
+section .title h4 {
+    font-size: 1.3rem;
+    color: #ed4848;
+    /* position: relative; */
+}
+
+section .title h2 {
+    font-size: 3.5rem;
+}
+
+section .title p {
+    font-size: 1.15rem;
+}
+
+section .about-self .left {
+    width: 50%;
+    float: left;   /* float 떠다니는 객체 */
+}
+
+section .about-self .left img {
+    max-width: 100%;
+}
+
+section .about-self .right {
+    width: 50%;
+    float: left;
+    padding: 0 2rem;
+}
+
+section .about-self .right h3 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+section .about-self .right h3 strong {
+    color: #ed4848;
+}
+
+section .about-self .right p {
+    font-size: 1.15rem;
+    margin: 1rem 0;
+}
+
+section .about-self .right .social a {
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+}
+
+section.contact .Contact-me .right .form-group {
+    margin-bottom: 1.25rem;
+}
+section.
+
+
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 1140px) {
+    main .container{
+        width: 992px;
+    }
+}
+
+section .container {
+    width: 600px;
+}
+
+section .about-self .left {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+section .about-self .right {
+    width: 100%;
+}
+

@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --> 대쉬 하나만 써도 되는데, 두개안쓰면 헷갈리니까 왠만하면 쓰자 */
+/* px는 고정, vw는 상대값 */
+:root {
+    --primary: #645cff;
+    --primary: #3c3799;
+    --grey: #64748b;
+    --grey-light: #f1f5f9;
+    --gray-dark: #0f172a;
+    --black: #222;
+    --white: #fff;
+    --fluid-width: 90vw;    
+    --max-width: 1170px;
+    --letter-spacing: 2px;
+    --border-radius: 0.15rem;
+    --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --transistion: 0.3s ease-in-out all;
+}
+
+body {
+    line-height: 1.5;
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+
+    
+    /* 양쪽을 고치는 경우보다 좌우 또는 상하를 고치는경우가 많다? */
+}
+
+.blog {
+    padding: 5rem 0;
+
+}
+
+.section-title {
+    text-align: center;
+    /* 영문일 경우 대문자로 변경하고자하면 */
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+    /* margin 밖, padding 안 */
+    margin-bottom: 2rem;
+
+}
+/* 이미지태그는 그대로의 크기를 보여주려고 함 */
+.section-content {
+    width: var(--fluid-width);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.blog {
+    background-color:var(--white);
+    padding: 0.75rem;
+    border-radius:var(--border-radius);
+    box-shadow:var(--shadow-light);
+    transform: var(--transistion);
+    margin-bottom: 2rem;
+
+}
+
+.blog::hover {
+    box-shadow: var(--shadow-dark);
+
+}
+
+.blog-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+}
+
+.blog-content {
+    padding-bottom: 1rem;
+}
+
+.blog-content span {
+    color: var(--primary);
+}
+
+.blog-content h3 {
+    text-transform: capitalize;
+}
+
+.blog-content p {
+    color: var(--grey);
+    margin: bottom 0.5rem;
+}
+
+.blog-content a {
+    text-transform: capitalize;
+}

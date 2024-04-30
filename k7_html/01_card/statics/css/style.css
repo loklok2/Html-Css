@@ -1,0 +1,30 @@
+/* 선택자 */
+/* 클래스선택 */
+/* 전체(태그) */
+/* 속성 */
+/* css는 시각속성을 수정하는거 */
+/* 좌표계, 박스모델 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+:root{
+    --gray-light:#f1f5f9;
+    --gray-dark: #0f172a;
+}
+
+body {
+    line-height: 1.5;
+    color: var(--gray-light);
+    background-color: var(--gray-dark);
+}
+
+.Card-blog{
+    width: 90vw;
+    /*     width: 750px; */
+}
+
+.card-blog-img{
+    width: 100%;

@@ -1,0 +1,33 @@
+.wrapper {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+}
+
+.menu {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.menu a {
+    background-color: #eff6ff;
+    padding: 0.6rem, 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+
+}
+
+.menu a .active {
+    background-color: #3b82f6;
+    color:white;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}

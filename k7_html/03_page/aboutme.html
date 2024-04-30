@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./statics/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>About Me?</title>
+</head>
+<!-- <ul>태그는 목록태그 꼭 외워두자 -->
+<!-- html은 pc화면 -->
+<!-- css 랜더링~~~과정 -->
+<!-- 정렬 => 기준선 -->
+<!-- 정렬방법은 flex, grid -->
+<!-- 첫번째 헤더에서 어떻게 정렬값을 가져야하는가? -->
+<body>
+    <header>
+        <div class="container">
+            <h1><button>SU</button></h1>
+            <nav>
+                <ul><!-- 메뉴바는 이걸로 만든다 기억 <ul> -->
+                    <li>
+                        <button>About</button>
+                    </li>
+                    <li>
+                        <button>Feature</button>
+                    </li>
+                    <li>
+                        <button>Portfoilo</button>
+                    </li>
+                    <li>
+                        <button>Contact</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    <!-- HEADER의 끝 -->
+    <!-- 메인 -->
+    <main>
+        <div class="container">
+            <h3>Welcome</h3>
+            <h2>I'M A</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, iusto libero excepturi non reprehenderit.
+            </p>
+            <button class="download">DOWNLOAD CV</button>
+            <button class="mouse">
+                <i class="fa-solid fa-computer-mouse"></i>
+            </button>
+        </div>
+    </main>
+    <!-- 메인 끝 -->
+    <!-- 섹션 시작 -->
+    <section>
+        <div class="container">
+            <div class="title">
+                <h4>Who Am I</h4>
+                <h2>About me</h2>
+            </div>
+            <div class="about-self">
+                <div class="left">
+                <img src="./statics/img/me_alone.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h3>Hello,<strong>I'm Sucoding</strong></h3>
+                    <P>
+                        I'm Web Publisher And Web Front-End Developer. 
+                        <!--ctrl+shift+p  -->
+                    </P>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitch"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>   
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="title">
+                <h4>CONTACT</h4>
+                <h2>Contact With Me</h2>                
+            </div>
+            <div class="Contact-me">
+                <div class="left">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>phone</h3>
+                            <p>010-2222-1111</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="#" method="post"> <!-- 이거 3개는 꼭 외우고 쓰자 -->
+                    <div class="form-group">
+                        <label for="name">name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">password</label>
+                        <input type="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">게시글</label>
+                        <textarea>dfadfa</textarea>
+                    </div>
+                    <button type="submit">send</button><!-- "sumit 빠트리지 말자" -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 폼태크는 보내는방법 만드는방법 중요해 -->
+    <!--<form action="#" method="post"> , <button type="submit">send</button>  -->
+        <!-- 제일 중요한 태그는 시멘틱, 제일 유용한건 폼 -->
+        <!-- 내부 및 인라인 스타일시트는 거의 안쓴다 -->
+</body>
+</html>
